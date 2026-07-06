@@ -40,7 +40,8 @@ export function ApiPlayground() {
       
       setResponse('Connecting to LexForge API Gateway...\n\n');
       
-      const res = await fetch(`http://localhost:3000${endpoint}`, {
+      const baseUrl = window.location.hostname === 'localhost' ? 'http://localhost:3000' : '';
+      const res = await fetch(`${baseUrl}${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
