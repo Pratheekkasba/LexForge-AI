@@ -10,13 +10,13 @@ export function EnterpriseSecurity() {
               Your Data. Your Rules.<br />Zero Compromise.
             </h2>
             <p className="text-lg mb-8 leading-relaxed" style={{ color: 'rgba(225, 224, 204, 0.6)' }}>
-              LexForge is fundamentally designed around the strict privacy requirements of top-tier legal organizations. We guarantee that your proprietary data is never used to train our base models.
+              LexForge is built around the strict privacy requirements of India's top legal institutions. We guarantee your proprietary data is never used to train our base models and stays within Indian data boundaries.
             </p>
             <div className="space-y-6">
               {[
                 { icon: Lock, title: 'Zero Data Retention', desc: 'Prompts and completions are immediately discarded after processing.' },
                 { icon: FileKey, title: 'Bring Your Own Key (BYOK)', desc: 'Encrypt your fine-tuning datasets using your own KMS keys.' },
-                { icon: ShieldAlert, title: 'SOC2 & HIPAA Certified', desc: 'Independently audited infrastructure meeting the highest global standards.' }
+                { icon: ShieldAlert, title: 'DPDP Act & IT Act Compliant', desc: 'Built to comply with India\'s Digital Personal Data Protection Act, 2023 and the IT Act, 2000.' }
               ].map((feature, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
@@ -37,7 +37,7 @@ export function EnterpriseSecurity() {
                 <div className="absolute top-0 right-0 p-32 opacity-10 blur-3xl rounded-full bg-white/20 pointer-events-none" />
                 <div className="flex items-center gap-2 mb-6 pb-6 border-b" style={{ borderColor: 'rgba(255,255,255,0.04)' }}>
                   <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-xs font-mono tracking-widest text-green-400">SOC2 COMPLIANCE ACTIVE</span>
+                   <span className="text-xs font-mono tracking-widest text-green-400">DPDP ACT 2023 COMPLIANT</span>
                 </div>
                 
                 <div className="space-y-4 font-mono text-xs" style={{ color: 'rgba(225, 224, 204, 0.6)' }}>

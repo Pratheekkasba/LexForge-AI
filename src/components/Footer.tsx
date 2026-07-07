@@ -145,6 +145,9 @@ export function Footer() {
             <span className="text-xs" style={{ color: 'rgba(225, 224, 204, 0.2)' }}>
               © {new Date().getFullYear()}
             </span>
+            <span className="text-xs ml-1" style={{ color: 'rgba(225, 224, 204, 0.25)' }}>
+              · Made in India 🇮🇳
+            </span>
           </div>
 
           {/* Social */}

@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Mail, Lock, Loader2 } from 'lucide-react';
+import { ArrowRight, Mail, Lock, Loader2, ChevronLeft } from 'lucide-react';
 import { loginSchema, type LoginFormData } from '../../lib/validators';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -46,6 +46,18 @@ export function LoginPage() {
     <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-black">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+
+      {/* Back to Home */}
+      <Link
+        to="/"
+        className="absolute top-5 left-5 flex items-center gap-1.5 text-sm transition-colors duration-300 z-20 group"
+        style={{ color: 'rgba(225, 224, 204, 0.5)' }}
+        onMouseEnter={(e) => (e.currentTarget.style.color = '#E1E0CC')}
+        onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(225, 224, 204, 0.5)')}
+      >
+        <ChevronLeft size={16} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
+        Back to Home
+      </Link>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}

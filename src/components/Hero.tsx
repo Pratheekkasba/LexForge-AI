@@ -56,7 +56,7 @@ export function Hero() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse-subtle" />
-            Powered by leading large language models
+            Powering India's legal professionals with AI
           </div>
         </motion.div>
 
@@ -67,7 +67,7 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[0.95]"
           />
           <WordsPullUp
-            text="Built for Modern Law."
+            text="Built for Bharat's Law."
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight leading-[0.95] mt-1 md:mt-2"
             delay={0.3}
           />
@@ -81,7 +81,7 @@ export function Hero() {
           className="text-center max-w-2xl mx-auto mb-10 text-sm sm:text-base md:text-lg leading-relaxed"
           style={{ color: 'rgba(225, 224, 204, 0.55)' }}
         >
-          Deploy enterprise-grade legal intelligence with secure APIs, document analysis, contract review, legal research, compliance workflows, and intelligent automation.
+          Deploy enterprise-grade legal intelligence built for the Indian legal ecosystem — secure APIs, IPC & CrPC analysis, contract review, High Court research, compliance workflows, and intelligent automation for law firms, corporates, and courts across India.
         </motion.p>
 
         {/* CTA Buttons */}

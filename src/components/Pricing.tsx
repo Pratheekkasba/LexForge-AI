@@ -5,8 +5,26 @@ import { WordsPullUpMultiStyle } from './animations';
 
 const plans = [
   {
+    name: 'Free',
+    price: '₹0',
+    period: '/month',
+    description: 'Try LexForge with no commitment. Perfect for exploring the API.',
+    badge: null,
+    features: [
+      { label: '500 monthly requests', included: true },
+      { label: 'Community support', included: true },
+      { label: '10 req/min rate limit', included: true },
+      { label: 'REST API access', included: true },
+      { label: 'Basic analytics', included: true },
+      { label: '1 API key', included: true },
+    ],
+    cta: 'Start for Free',
+    highlighted: false,
+    color: '#DEDBC8',
+  },
+  {
     name: 'Starter',
-    price: '$49',
+    price: '₹1,499',
     period: '/month',
     description: 'For small teams getting started with legal AI.',
     badge: null,
@@ -16,7 +34,7 @@ const plans = [
       { label: '100 req/min rate limit', included: true },
       { label: 'REST API access', included: true },
       { label: 'Basic analytics', included: true },
-      { label: 'Single API key', included: true },
+      { label: 'Up to 3 API keys', included: true },
     ],
     cta: 'Get Started',
     highlighted: false,
@@ -24,7 +42,7 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: '$199',
+    price: '₹1,799',
     period: '/month',
     description: 'For growing teams that need more power and support.',
     badge: 'Most Popular',
@@ -43,7 +61,7 @@ const plans = [
     color: '#E1E0CC',
   },
   {
-    name: 'Enterprise',
+    name: 'Custom',
     price: 'Custom',
     period: '',
     description: 'For organizations with advanced security and compliance needs.',
@@ -95,7 +113,7 @@ export function Pricing({ onSubscribe, loadingTier }: { onSubscribe?: (tier: str
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-3 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-3 max-w-6xl mx-auto">
           {plans.map((plan, i) => (
             <PricingCard key={plan.name} plan={plan} index={i} onSubscribe={onSubscribe} loadingTier={loadingTier} />
           ))}

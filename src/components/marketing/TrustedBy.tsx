@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 
 export function TrustedBy() {
   const companies = [
-    'Skadden', 'Latham & Watkins', 'Kirkland & Ellis', 'DLA Piper', 'Baker McKenzie', 'Clifford Chance'
+    'AZB & Partners', 'Cyril Amarchand Mangaldas', 'Shardul Amarchand Mangaldas', 'Khaitan & Co', 'JSA Advocates', 'Trilegal', 'Nishith Desai Associates', 'S&R Associates'
   ];
 
   return (
     <section className="py-24 border-y overflow-hidden relative" style={{ borderColor: 'rgba(255,255,255,0.04)', background: '#000000' }}>
       <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
         <p className="text-sm uppercase tracking-widest font-semibold" style={{ color: 'rgba(225, 224, 204, 0.4)' }}>
-          Trusted by the world's leading legal and compliance teams
+          Trusted by India's leading law firms and legal teams
         </p>
       </div>
       

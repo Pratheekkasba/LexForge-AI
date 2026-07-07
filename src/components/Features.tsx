@@ -11,7 +11,7 @@ import { WordsPullUpMultiStyle } from './animations';
 const features = [
   {
     title: 'Enterprise Security',
-    description: 'Bank-grade encryption and compliance infrastructure built for the most demanding legal environments.',
+    description: 'Bank-grade encryption and compliance infrastructure built for India\'s most demanding legal environments.',
     icon: Shield,
     color: '#4ade80',
     items: [
@@ -27,11 +27,11 @@ const features = [
     icon: Scale,
     color: '#a78bfa',
     items: [
-      { icon: FileSearch, label: 'Contract review', desc: 'Automated clause analysis and risk detection' },
-      { icon: FileText, label: 'Legal summarization', desc: 'Distill complex documents into key points' },
-      { icon: Gavel, label: 'Case research', desc: 'Intelligent precedent and citation discovery' },
-      { icon: ClipboardCheck, label: 'Compliance assistance', desc: 'Regulatory compliance checking' },
-      { icon: Quote, label: 'Citation extraction', desc: 'Automatic reference identification' },
+      { icon: FileSearch, label: 'Contract review', desc: 'Automated clause analysis and risk detection under Indian law' },
+      { icon: FileText, label: 'Legal summarization', desc: 'Distill complex IPC, CrPC, and civil court documents' },
+      { icon: Gavel, label: 'Case research', desc: 'High Court, Supreme Court precedent and citation discovery' },
+      { icon: ClipboardCheck, label: 'Compliance assistance', desc: 'SEBI, RBI, MCA and GST regulatory compliance checking' },
+      { icon: Quote, label: 'Citation extraction', desc: 'Automatic SCC and AIR reference identification' },
     ],
   },
   {
@@ -87,7 +87,7 @@ export function Features() {
           />
           <WordsPullUpMultiStyle
             segments={[
-              { text: 'Secure. Intelligent. Production-ready.', className: 'text-gray-500' },
+              { text: 'Secure. Intelligent. Made for India.', className: 'text-gray-500' },
             ]}
             containerClassName="text-lg sm:text-xl md:text-2xl font-normal leading-[1.2]"
             delay={0.3}

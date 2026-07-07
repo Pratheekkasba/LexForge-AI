@@ -42,7 +42,7 @@ export function PricingPage() {
           Flexible Plans for Every Team
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: 'rgba(225, 224, 204, 0.6)' }}>
-          Whether you're a startup or a global enterprise, we have a plan designed to scale with your legal operations.
+          Whether you're a solo advocate, a law firm, or a corporate legal team across India, we have a plan designed to scale with your practice.
         </p>
       </motion.div>
       
